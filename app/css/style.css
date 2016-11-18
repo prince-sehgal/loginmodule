@@ -1,0 +1,52 @@
+.strikethrough{
+    text-decoration : line-through;
+    color:darkslategray;
+}
+.container
+{
+    background-color: white;
+}
+.form
+{
+    margin: 5px 15px 5px 15px;
+}
+.form-group
+{
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+.logoheader{
+    width: 100%;
+    background-image: url('images/bg_banner_upper.png');
+    background-color: #15224f;
+    height: 100px;
+
+}
+
+.footer-bottom {
+    background-image: url('images/bg_banner_upper.png');
+    background-color: #15224f;
+    min-height: 50px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+
+.signInHeader{
+    color:white;
+    font-size:17px;
+    background-image: url('images/bg_signIn_header.png');
+    background-color: #006dcc;
+    margin-right: 0px;
+    margin-top: 10px;
+    }
+
+.signInBox{
+    margin-top: -5px;
+    margin-right: 0px;
+}
+
