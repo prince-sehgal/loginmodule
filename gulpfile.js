@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var liveServer = require('gulp-live-server');
 var browserSync = require('browser-sync');
-
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var reactify = require('reactify');
@@ -15,7 +14,7 @@ gulp.task('live-server', function () {
 //complile JSX and bundle it for browserify(entry JSX) ->transform to reactify -> Java script(Output JS)
 gulp.task('bundle',['copy'], function () {
     return browserify({
-            entries: 'app/login.jsx', //entry point 
+            entries: 'app/mount.jsx', //entry point 
             debug: true
         })
         .transform(reactify)
@@ -27,10 +26,10 @@ gulp.task('bundle',['copy'], function () {
 
 //apply theme on app.js that resides in temp
 gulp.task('copy',function(){
-    gulp.src(['app/css/*.css'])
-    .pipe(gulp.dest('./temp'));
-     gulp.src(['app/images/*'])
-    .pipe(gulp.dest('./temp/images'));
+        gulp.src(['app/css/*.css'])
+        .pipe(gulp.dest('./temp'));
+        gulp.src(['app/images/*'])
+        .pipe(gulp.dest('./temp/images'));
 })
 
 // combined master task + bundle(i.e. generate app.js) -> server start - >host

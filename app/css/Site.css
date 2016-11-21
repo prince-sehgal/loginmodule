@@ -1,4 +1,4 @@
-﻿html {
+html {
     background-color: #e2e2e2;
     margin: 0;
     padding: 0;
@@ -352,7 +352,7 @@ aside {
     }
 
     #loginForm input {
-        width: 250px;
+        width: 100px;
     }
 
     #loginForm input[type="checkbox"],

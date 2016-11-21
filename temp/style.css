@@ -13,7 +13,8 @@
 .form-group
 {
     margin-left: 10px;
-    margin-right: 10px;  
+    margin-right: 10px; 
+    
 }
 .logoheader{
     width: 100%;
@@ -38,6 +39,7 @@
 
 .signInHeader{
     color:white;
+    font-size:17px;
     background-image: url('images/bg_signIn_header.png');
     background-color: #006dcc;
     margin-right: 0px;
