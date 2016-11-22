@@ -5,8 +5,7 @@ module.exports = React.createClass({
        return(
          <form className="form well signInHeader">
                <div>
-                   <p><b>Sign In To Your Account</b></p>
-                   
+               Sign In To Your Account
                </div>
             </form>
        )

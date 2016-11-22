@@ -10,9 +10,7 @@ var topNavigationBar = React.createClass({
                 <div>
                   <ul className="nav navbar-nav navbar-left">
                         <li className="nav-item">
-                             <li className="nav-link">
-                                 <Link to="/home">Home</Link>
-                            </li>
+                                 <Link  className="nav-link" to="/home">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/profile">Project-Profile</Link>

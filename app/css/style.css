@@ -12,18 +12,38 @@
 }
 .form-group
 {
+    margin-top:10px;
     margin-left: 10px;
-    margin-right: 10px; 
+    margin-right: 5px; 
     
 }
 .logoheader{
     width: 100%;
     background-image: url('images/bg_banner_upper.png');
     background-color: #15224f;
-    height: 100px;
+    height: 101px;
 
 }
+.form-group input{
+    height:30px;
+}
+.form-group  button{
+    height:30px;
+}
+.mercerinsights{
+vertical-align: right !important;
+float:right;    color: #fff;
+    line-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+}
+.mercerinsights a{
+color:white !important;
 
+}
+.MercerPicture{
+    float:left;
+}
 .footer-bottom {
     background-image: url('images/bg_banner_upper.png');
     background-color: #15224f;
@@ -34,16 +54,20 @@
     color: #fff;
     line-height: 30px;
     min-height: 30px;
-    padding: 7px 0;
+    padding: 7px;
+    text-align:right;
 }
-
+.layer{
+    margin:0 40px 0 40px;
+}
 .signInHeader{
     color:white;
     font-size:17px;
     background-image: url('images/bg_signIn_header.png');
     background-color: #006dcc;
     margin-right: 0px;
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center;
     }
 
 .signInBox{

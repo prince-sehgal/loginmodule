@@ -1,6 +1,5 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-
 var PropTypes = React.PropTypes;
 
  var SignInBox= React.createClass({
@@ -16,25 +15,51 @@ var PropTypes = React.PropTypes;
       }  
     },
     
-     handleUpdateUser: function(e){
+     onUpdateUser: function(e){
          this.setState({
           name:e.target.value          
       })  
     },
     
-     handleUpdatePassword: function(e){
+     onUpdatePassword: function(e){
          this.setState({
           password:e.target.value          
       })  
     },
-    
+
       handleSubmitUser: function(e){
-     e.preventDefault(); 
+      e.preventDefault();
+var mongoose = require('mongoose'); 
+// Mongoose connection to MongoDB (ted/ted is readonly)
+mongoose.connect('mongodb://localhost:27017/showcase', function (error) {
+    if (error) {
+        console.log(error);
+    }
+});
+
+var Schema = mongoose.Schema;
+var loginSchema =new Schema({
+    uid: Integer,
+    name: String,
+    username: String,
+    password: String,
+    emailid: String,
+    status: String
+});
+
+// Mongoose Model definition
+var loginData = mongoose.model('showcase',loginSchema);
+
         var name =  this.state.name;
-        this.setState({
-            name: ''
-        });
-        this.context.router.push('/home/')
+        var password = this.state.password;
+loginData.find({}, function (err, docs) {
+    console.log(docs);
+    });
+        // this.context.router.push('/home/')
+        // this.setState({
+        //     name: '',
+        //     password:''
+        // });
     },
      
      
@@ -46,16 +71,16 @@ var PropTypes = React.PropTypes;
                         <div className="form-group">
                                 <input className ="form-control"
                                 placeholder="Provide user name"
-                                onChange={this.props.onUpdateUser}
+                                onChange={this.onUpdateUser}
                                 value={this.props.name}
                                 type = "text" />
                         </div>
                         <div className="form-group">
                                 <input className ="form-control"
                                 placeholder="Provide password"
-                                onChange={this.props.onUpdatePassword}
+                                onChange={this.onUpdatePassword}
                                 value={this.props.password}
-                                type = "text" />
+                                type = "password" />
                         </div>
                         <div className="form-group">
                                 <button 

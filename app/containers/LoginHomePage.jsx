@@ -12,7 +12,7 @@ module.exports = React.createClass({
            <div className="container">
             <div className="row">
                 <div className="logoheader">
-                    <LogoHeader pagename = 'mercerinsights'/>
+                    <LogoHeader pagename = 'mercerinsights' pagetitle='Mercer Insights'/>
                 </div>
             </div>
             
