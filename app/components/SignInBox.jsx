@@ -29,37 +29,13 @@ var PropTypes = React.PropTypes;
 
       handleSubmitUser: function(e){
       e.preventDefault();
-var mongoose = require('mongoose'); 
-// Mongoose connection to MongoDB (ted/ted is readonly)
-mongoose.connect('mongodb://localhost:27017/showcase', function (error) {
-    if (error) {
-        console.log(error);
-    }
-});
-
-var Schema = mongoose.Schema;
-var loginSchema =new Schema({
-    uid: Integer,
-    name: String,
-    username: String,
-    password: String,
-    emailid: String,
-    status: String
-});
-
-// Mongoose Model definition
-var loginData = mongoose.model('showcase',loginSchema);
-
         var name =  this.state.name;
         var password = this.state.password;
-loginData.find({}, function (err, docs) {
-    console.log(docs);
-    });
-        // this.context.router.push('/home/')
-        // this.setState({
-        //     name: '',
-        //     password:''
-        // });
+        this.context.router.push('/home/')
+        this.setState({
+            name: '',
+            password:''
+        });
     },
      
      
