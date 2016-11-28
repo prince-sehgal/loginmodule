@@ -5,7 +5,23 @@ var LogoHeader=require('./../components/LogoHeader.jsx');
 var LogoFooter=require('./../components/LogoFooter.jsx');
 var SignInBoxHeader=require('./../components/SignInBoxHeader.jsx');
 var NavBar=require('./../components/TopNavigationBar.jsx');
-var ToDoList=require('./../components/GroceryItem.jsx');
+var ToDoList=require('./../components/ToDoList.jsx');
+var AddToDo = require('./../components/AddToDo.jsx');
+
+var dispatcher = require('./../dispatcher.js');
+var GroceryItemStore = require('./../stores/GroceryItemStore.jsx');
+
+var items1 = GroceryItemStore.getGroceryItems();
+
+GroceryItemStore.onChange(()=>{
+	items = GroceryItemStore.getGroceryItems();
+	//render();
+})
+// function render(){
+// 	React.render(<ToDoList items={items1}/>,mount);
+// }
+
+
 var items = [{
 	name:"Login Page"
 },{
@@ -29,12 +45,13 @@ module.exports = React.createClass({
                     <div>    
                         <NavBar />
                     </div>
-		{this.items.map((item,index)=>{
+		{items.map((item,index)=>{
 					return (
 						<ToDoList item={item} key={"item"+index} />
 					)
 				})}
 
+<AddToDo/>
                 </div>                      
                 <div className="row">
                     <div className="navbar-fixed-bottom footer-bottom">

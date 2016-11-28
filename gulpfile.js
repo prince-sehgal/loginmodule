@@ -26,17 +26,19 @@ gulp.task('bundle',['copy'], function () {
 		}))
 		.bundle()
         .pipe(source('app.js'))
-        .pipe(gulp.dest('./temp'));
+        .pipe(gulp.dest('./.tmp'));
 
 })
 
 
 //apply theme on app.js that resides in temp
 gulp.task('copy',function(){
+  	gulp.src(['bower_components/**'])
+		.pipe(gulp.dest('./.tmp/bower_components'));
         gulp.src(['app/css/*.css'])
-        .pipe(gulp.dest('./temp'));
+        .pipe(gulp.dest('./.tmp'));
         gulp.src(['app/images/*'])
-        .pipe(gulp.dest('./temp/images'));
+        .pipe(gulp.dest('./.tmp/images'));
 })
 
 gulp.task('temp',function(){
@@ -56,7 +58,7 @@ gulp.task('observe-all',function(){
 });
 
 // combined master task + bundle(i.e. generate app.js) -> server start - >host
-gulp.task('serve', ['bundle', 'live-server'], function () {
+gulp.task('serve',  ['live-server','bundle','temp','observe-all'], function () {
     browserSync.init(null, {
         proxy: "http://localhost:7777",
         port: 9001

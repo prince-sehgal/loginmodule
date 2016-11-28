@@ -7,6 +7,6 @@ app.get('/', function(req,res){
     res.render('./../app/index.ejs',{});
 })
 //location of resources to render home page
-.use(express.static(__dirname + '/../temp'))
+.use(express.static(__dirname + '/../.tmp'))
 .listen(7777);
                    

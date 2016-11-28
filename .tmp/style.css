@@ -81,10 +81,6 @@ html {
 	background-color: #fffefd;
 }
 
-body {
-	padding-top: 3rem;
-}
-
 .purchased-false {
 	  height: 40px;
     background-color: red;

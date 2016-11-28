@@ -1,4 +1,5 @@
 "use strict";
+
 let dispatcher = require("./../dispatcher.js");
 let {get,post,del,patch} = require("./../RestHelper.js");
 
@@ -16,6 +17,7 @@ function GroceryItemStore(){
 	get("api/items")
 	.then((data)=>{
 		groceryItems = data;
+		console.log(data);
 		triggerListeners();
 	});
 

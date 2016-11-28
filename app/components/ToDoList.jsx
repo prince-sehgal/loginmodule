@@ -1,6 +1,7 @@
 var dispatcher = require("./../dispatcher.js");
 var groceryAction = require("./../stores/GroceryItemActionCreator.jsx");
 var React = require('react');
+var ReactAddons = require('react-addons');
 
 
 module.exports = React.createClass({
