@@ -8,7 +8,7 @@ var Main = require('./../components/main.jsx');
 var LoginHome = require('./../containers/LoginHomePage.jsx');
 var Home = require('./../containers/HomePage.jsx');
 var Profile = require('./../containers/projectProfile.jsx');
-var Tracker = require('./../containers/projectTracker.jsx');
+var ToDoList = require('./../containers/projectToDoList.jsx');
 var About = require('./../containers/aboutUS.jsx');
 
 var routes = (
@@ -17,7 +17,7 @@ var routes = (
             <IndexRoute component ={LoginHome}/>
             <Route path='home' header ="home" component ={Home} /> 
             <Route path='profile' header ="profile" component ={Profile} /> 
-            <Route path='tracker' header ="tracker" component ={Tracker} /> 
+            <Route path='todolist' header ="todolist" component ={ToDoList} /> 
             <Route path='about' header ="about" component ={About} />           
         </Route>
     </Router>

@@ -16,7 +16,7 @@ var topNavigationBar = React.createClass({
                             <Link className="nav-link" to="/profile">Project-Profile</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/tracker">Project-Tracker</Link>
+                            <Link className="nav-link" to="/todolist">Project-ToDo-List</Link>
                         </li>           
                   </ul>
                   <ul className="nav navbar-nav navbar-right">

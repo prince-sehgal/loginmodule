@@ -4,6 +4,7 @@ var browserSync = require('browser-sync');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var reactify = require('reactify');
+var babelify = require('babelify');
 
 // server start
 gulp.task('live-server', function () {
@@ -18,11 +19,17 @@ gulp.task('bundle',['copy'], function () {
             debug: true
         })
         .transform(reactify)
-        .bundle()
+        .transform(reactify)
+		.transform(babelify.configure({
+			stage:0,
+			sourceMaps:true
+		}))
+		.bundle()
         .pipe(source('app.js'))
         .pipe(gulp.dest('./temp'));
 
 })
+
 
 //apply theme on app.js that resides in temp
 gulp.task('copy',function(){
@@ -32,10 +39,27 @@ gulp.task('copy',function(){
         .pipe(gulp.dest('./temp/images'));
 })
 
+gulp.task('temp',function(){
+	gulp.src(['app/index.html','app/*.css'])
+		.pipe(gulp.dest('./.tmp'));
+
+	gulp.src(['bower_components/**'])
+		.pipe(gulp.dest('./.tmp/bower_components'));
+});
+
+gulp.task('bundle-n-reload',['bundle'],browserSync.reload)
+
+gulp.task('observe-all',function(){
+	gulp.watch('app/**/*.*',['bundle-n-reload']);
+	gulp.watch('app/*.*',['temp']);
+	gulp.watch('./server/**/*.js',['live-server']);
+});
+
 // combined master task + bundle(i.e. generate app.js) -> server start - >host
 gulp.task('serve', ['bundle', 'live-server'], function () {
     browserSync.init(null, {
         proxy: "http://localhost:7777",
         port: 9001
     })
-})
+});
+
