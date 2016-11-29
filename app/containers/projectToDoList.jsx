@@ -8,15 +8,15 @@ var NavBar=require('./../components/TopNavigationBar.jsx');
 var ToDoList=require('./../components/ToDoList.jsx');
 var AddToDo = require('./../components/AddToDo.jsx');
 
-var dispatcher = require('./../dispatcher.js');
-var GroceryItemStore = require('./../stores/GroceryItemStore.jsx');
+// varvar dispatcher = require('./../dispatcher.js');
+// var GroceryItemStore = require('./../stores/GroceryItemStore.jsx');
 
-var items1 = GroceryItemStore.getGroceryItems();
+// var items1 = GroceryItemStore.getGroceryItems();
 
-GroceryItemStore.onChange(()=>{
-	items = GroceryItemStore.getGroceryItems();
-	//render();
-})
+// GroceryItemStore.onChange(()=>{
+// 	items = GroceryItemStore.getGroceryItems();
+// 	//render();
+// })
 // function render(){
 // 	React.render(<ToDoList items={items1}/>,mount);
 // }
