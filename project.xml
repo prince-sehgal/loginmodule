@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Summary>Objective,Summary,Personal Information,Personal Details,Career Profile,Career Summary,Personal Profile,Personal Summary,Professional Summary,Professional Profile,Career Goal,Objective,Career Objective,Employment Objective,Professional Objective,Professional Summary,Summaries and Goals,Objectives,Synopsis,profile,Abstract</Summary>
+  <Specialties>specialties,Rewards,Recognitions,Rewards and Recognitions,Extra-Curricular Activities,Activities</Specialties>
+  <Skills>IT Skills,IT Knowledge,IT Working Skills &amp; Knowledge,TECHNICAL PROFICIANCY,Skills,Areas of Ability,Areas of Expertise,Career Skills Summary,Computer Knowledge,Computer Skills,Core Competencies,Core Competencies &amp; Knowledge,Core Strengths &amp; Expertise,Demonstrated Abilities,Endorsements,Key Competencies,Key Knowledge Area,Knowledge,Language Competencies &amp; Skills,Leadership Skills,Licenses,Management Skills,Personal Attributes,Personal Strengths,Professional Skills and Achievements,Professional Skills &amp; Experience,Relevant skills,Skills and Abilities,Skills Summary,Strengths,Technical Skills,Expertise and Proficiencies,Credentials,Areas of Experience,Expertise,Areas of Knowledge,Career Related Skills,Professional Skills,Specialized Skills,Computer Skills,Computer Knowledge,Technologies,Technical Experience,Language Competencies and Skills,Programming Languages,Skills Summary,Functional Skills,Technical &amp; Functional Skills,Skill Set,Technical Skills:,SOFTWARE COMPETENCIES</Skills>
+  <Experience>CAREER GLIMPSE,EXPERIENCE SUMMARY,Experience,Appointments,Career History,Career Background,Course Project Experience,Community Involvement,Community Service,Employment,Employment,Internship Experience,Military Background,Positions Held,Professional Background,Professional Employment,Voluntary work,Work Background,Work Record,Employment,Work and Employment,Employment History,Work History,Work Experience,Professional Experience,Professional Background,Additional Experience,Career Related Experience,Related Experience,Freelance,Freelance Experience,Army Experience,Military Experience,Military Background,Employment Summary,Experience Profile</Experience>
+  <Education>ACADEMIA,Educational Information,Educational Details,PROFESSIONAL QUALIFICATIONS,ACADEMIC QUALIFICATION,PROFESIONAL QUALIFICATION,Education,Academic Achievement,History,Academic Training,Academic Qualifications,Additional Training,Accreditations,Conferences Attended,Education Background,Educational Preparation,Educational Qualifications,Educational Training,Education and Training,Examinations,Job Related Courses,Licences,Qualifications,Development,Training,Relevant Education and Training,Short Courses,Training Courses Attended,Education and Training,Academic Background,Academic Experience,Programs,Courses,Related Courses,Educational Background,Educational Training,Education and Training,Academic Training,Professional Training,Course Project Experience,Related Course Projects,Internship Experience,Internships,Apprenticeships,Special Training,Scholastics,Certifications,Education &amp; Certifications</Education>
+  <Interests>interests</Interests>
+  <Language>Language</Language>
+</Data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Summary>summary,Professional Summary,Synopsis,PROFILE</Summary>
+  <Specialties>specialties,Rewards,Recognitions,Rewards and Recognitions,Extra-Curricular Activities,Activities</Specialties>
+  <Skills>TECHNICAL PROFICIANCY,skills,Skills Summary,Technical Skills,Functional Skills,Technical &amp; Functional Skills,Technical skills,Skill Set,Technical Skills:</Skills>
+  <Experience>experience,Employment Summary,Experience Profile,Work Experience</Experience>
+  <Education>ACADEMIC QUALIFICATION,PROFESIONAL QUALIFICATION,education,Scholastics,Education,Certifications,Education &amp; Certifications</Education>
+  <Interests>interests</Interests>
+  <Language>languages</Language>
+</Data>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Summary>Objective,Summary,Personal Information,Personal Details,Career Profile,Career Summary,Personal Profile,Personal Summary,Professional Summary,Professional Profile,Career Goal,Objective,Career Objective,Employment Objective,Professional Objective,Professional Summary,Summaries and Goals,Objectives,Synopsis,profile,Abstract</Summary>
+  <Specialties>Specialties,Awards &amp; Special Achievements,Academic Awards,Achievements,Accomplishments,Conference Papers Delivered,Distinctions,Fellowships,Portfolio,Prizes,Publications,State Representation,Scholarships,Special Achievements &amp; Awards,Activities and Honours,Affiliations,Associations,Athletic Involvement,Civic Activities,College Activities,Community Activities,Community Involvement,Extra-Curricular Activities,Professional Activities,Professional Affiliations,Professional Memberships,Volunteer Work,Awards and Recognition,Honors,Academic Honors,Accolades,Endorsements,Accomplishments,Awards,Rewards,Recognitions,Rewards and Recognitions,Activities</Specialties>
+  <Skills>TECHNICAL PROFICIANCY,Skills,Areas of Ability,Areas of Expertise,Career Skills Summary,Computer Knowledge,Computer Skills,Core Competencies,Core Competencies &amp; Knowledge,Core Strengths &amp; Expertise,Demonstrated Abilities,Endorsements,Key Competencies,Key Knowledge Area,Knowledge,Language Competencies &amp; Skills,Leadership Skills,Licenses,Management Skills,Personal Attributes,Personal Strengths,Professional Experience,Professional Skills and Achievements,Professional Skills &amp; Experience,Relevant skills,Skills and Abilities,Skills Summary,Strengths,Technical Skills,Expertise and Proficiencies,Credentials,Areas of Experience,Expertise,Areas of Knowledge,Career Related Skills,Professional Skills,Specialized Skills,Computer Skills,Computer Knowledge,Technologies,Technical Experience,Languages,Language Competencies and Skills,Programming Languages,Skills Summary,Functional Skills,Technical &amp; Functional Skills,Technical skills,Skill Set,Technical Skills:</Skills>
+  <Experience>Experience,Appointments,Career History,Career Background,Course Project Experience,Community Involvement,Community Service,Employment,Employment,Internship Experience,Military Background,Positions Held,Professional Background,Professional Employment,Voluntary work,Work Background,Work Record,Employment,Work and Employment,Employment History,Work History,Work Experience,Professional Experience,Professional Background,Additional Experience,Career Related Experience,Related Experience,Freelance,Freelance Experience,Army Experience,Military Experience,Military Background,Employment Summary,Experience Profile</Experience>
+  <Education>ACADEMIC QUALIFICATION,PROFESIONAL QUALIFICATION,Education,Academic Achievement,History,Academic Training,Academic Qualifications,Additional Training,Accreditations,Conferences Attended,Education Background,Educational Preparation,Educational Qualifications,Educational Training,Education and Training,Examinations,Job Related Courses,Licences,Qualifications,Development,Training,Relevant Education and Training,Short Courses,Training Courses Attended,Education and Training,Academic Background,Academic Experience,Programs,Courses,Related Courses,Educational Background,Educational Training,Education and Training,Academic Training,Professional Training,Course Project Experience,Related Course Projects,Internship Experience,Internships,Apprenticeships,Special Training,Scholastics,Certifications,Education &amp; Certifications</Education>
+  <Interests>interests</Interests>
+  <Language>Language</Language>
+</Data>-->
